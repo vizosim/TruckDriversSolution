@@ -7,7 +7,7 @@ namespace TruckDriversFunctionApp.Application
     {
         private readonly ITruckDriverRepository _repository = repository;
 
-        public async Task<IReadOnlyCollection<TruckDriver>> GetAsync(TruckDriverFilter filter, CancellationToken cancellationToken = default)
+        public async Task<IReadOnlyCollection<TruckDriver>> GetAsync(TruckDriverFilter filter, CancellationToken cancellationToken)
         {
             return (await _repository.GetAsync(filter, cancellationToken)).AsReadOnly();
         }

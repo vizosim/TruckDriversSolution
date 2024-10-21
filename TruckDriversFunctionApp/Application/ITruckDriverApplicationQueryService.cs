@@ -5,6 +5,6 @@ namespace TruckDriversFunctionApp.Application
 {
     public interface ITruckDriverApplicationQueryService
     {
-        Task<IReadOnlyCollection<TruckDriver>> GetAsync(TruckDriverFilter filter, CancellationToken cancellationToken = default);
+        Task<IReadOnlyCollection<TruckDriver>> GetAsync(TruckDriverFilter filter, CancellationToken cancellationToken);
     }
 }
